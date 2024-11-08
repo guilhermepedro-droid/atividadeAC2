@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facens - Webdesign</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="initializeCards()">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Bootstrap</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Bio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Formulário -->
+    <div class="container my-4">
+        <div class="form-group">
+            <input type="text" id="cardTitleInput" class="form-control" placeholder="Título">
+            <button onclick="addCard()" class="btn btn-primary mt-2">Cadastrar</button>
+        </div>
+
+        <!-- Cards Section -->
+        <div id="cardContainer" class="row">
+            <!-- Cards serão adicionados dinamicamente -->
+        </div>
+
+        <!-- Apagar Todos Button -->
+        <div class="text-center my-3">
+            <button onclick="removeAllCards()" class="btn btn-danger">APAGAR TODOS</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white text-center py-3">
+        Copyright Facens©2024 - Webdesign - [nome dos integrantes]
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
